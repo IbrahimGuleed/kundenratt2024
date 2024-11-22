@@ -1,0 +1,36 @@
+body{
+    display:grid;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    grid-template-areas: 
+    "header header header"
+    "nav1 nav1 aside"
+    "nav2 nav2 aside"
+    "sec1 sec2 sec3"
+    "footer footer footer";
+    }
+    header{
+        height: auto;
+        width: auto;
+    grid-area:header;
+    text-align: center;
+    background-color:#a1e8c8
+    }
+    #nav1 {
+        width: auto;
+        height: auto;
+        text-align: right;
+        background-color: #a1e8f1;
+    }  
+    #nav2 {
+        width: auto;
+        height: auto;
+        background-color:#a1e8f1 ;
+        grid-area: aside;
+    }
+    aside { 
+       text-align: center;
+       background-color: #a1e8f1;
+    }
+ 

@@ -1,1 +1,15 @@
-/* Denna fil skall innehålla din CSS kod */
+body{
+display:grid;
+height: 100%;
+width: 100%;
+padding: 0%;
+grid-template-areas: 
+"header header header"
+"nav nav nav"
+"sec1 sec2 sec3"
+"footer footer footer";
+}
+header{
+grid-area:header;
+background-color: aqua;
+}
