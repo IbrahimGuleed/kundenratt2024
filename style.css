@@ -1,14 +1,15 @@
+
 body{
     display:grid;
     height: 100%;
     width: 100%;
     padding: 0%;
     grid-template-areas: 
-    "header header header"
-    "nav1 nav1 aside"
-    "nav2 nav2 aside"
-    "sec1 sec2 sec3"
-    "footer footer footer";
+    "header header"
+
+    "section1 section2"
+    "footer footer";
+    background-color: #a1e8c8;
     }
     header{
         height: auto;
@@ -17,20 +18,71 @@ body{
     text-align: center;
     background-color:#a1e8c8
     }
-    #nav1 {
-        width: auto;
-        height: auto;
-        text-align: right;
-        background-color: #a1e8f1;
-    }  
-    #nav2 {
-        width: auto;
-        height: auto;
-        background-color:#a1e8f1 ;
-        grid-area: aside;
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color:#a1e8f1
+    
+        
     }
-    aside { 
-       text-align: center;
-       background-color: #a1e8f1;
+
+    .nav-bar{
+        display: flex;
+        list-style-type: none;
     }
- 
+   .nav-bar li {
+    margin: 0 30px;
+    width: 650px
+   }
+   .nav-bar a {
+    font-size: 30px;
+    color: #f9a7a1
+    
+   }
+
+#cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 70px auto;
+    justify-content: center;
+}
+ section {
+    border: 2px solid grey;
+    width: 185px;
+    height: 185px;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+section:hover {
+    height: 200px;
+    width: 200px;
+}
+#cardWrapper section p {
+    font-size: 20px;
+    text-shadow: 1px 2px 5px rgb(255, 255, 255), -2px -2px 3px white;
+}
+#s1{
+    background-image: url("../img/goteborg.avif");
+}
+#s2{
+    background-image: url("../img/linkoping.webp");
+}
+#s3{
+    background-image: url("../img/malmo.webp");
+}
+#s4{
+    background-image: url("../img/stockholm.jpg");
+}
+#s5{
+    background-image: url("../img/uppsala.jpg");
+}
+#s6{
+    background-image: url("../img/vasteras.jpg");
+}
